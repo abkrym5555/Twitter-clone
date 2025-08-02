@@ -17,6 +17,16 @@
   .link-span {
     @apply hidden xl:block ml-4 font-bold;
   }
+
+  .hashtag {
+    @apply p-3 border-b border-gray-200 dark:border-dim-200;
+  }
+  .hashtag h4 {
+    @apply font-bold text-gray-800 dark:text-white;
+  }
+  .hashtag p {
+    @apply text-xs text-gray-400;
+  }
 }
 
 @layer utilities {

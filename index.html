@@ -79,7 +79,8 @@
           </i>
         </div>
       </div>
-
+      <!--  -->
+      <!--  -->
       <!-- middle -->
       <div class="h-screen overflow-y-auto xl:w-1/2 w-full">
         <!-- sticky home  -->
@@ -262,9 +263,109 @@
           </svg>
         </div>
       </div>
-
+      <!--  -->
+      <!--  -->
       <!-- right -->
-      <div class="hidden xl:block w-[30%]"></div>
+      <div class="hidden xl:block w-[30%]">
+        <!-- search -->
+        <div class="relative m-2">
+          <i
+            class="fa-solid fa-magnifying-glass text-gray-600 absolute left-4 top-1/2 -translate-y-1/2"
+          ></i>
+          <input
+            type="text"
+            class="w-full bg-gray-200 dark:bg-dim-400 border-gray-200 dark:border-dim-400 dark:text-gray-200 text-dim-400 h-9 font-normal pl-12 text-sm rounded-full focus:outline-none"
+            placeholder="Search Twitter"
+          />
+        </div>
+
+        <!-- hashtags -->
+        <div class="bg-gray-50 dark:bg-dim-700 rounded-2xl m-2">
+          <h3
+            class="text-gray-900 dark:text-white font-bold p-3 border-b border-gray-200 dark:border-dim-200"
+          >
+            What’s happening
+          </h3>
+          <div class="hashtag">
+            <h4>#Palestine</h4>
+            <p>29.7K Tweets</p>
+          </div>
+          <div class="hashtag">
+            <h4>#Palestine</h4>
+            <p>29.7K Tweets</p>
+          </div>
+          <div class="hashtag">
+            <h4>#Palestine</h4>
+            <p>29.7K Tweets</p>
+          </div>
+          <div class="text-blue-400 p-3 cursor-pointer">Show more</div>
+        </div>
+
+        <!-- who to follow  -->
+        <div class="bg-gray-50 dark:bg-dim-700 rounded-2xl m-2">
+          <h3
+            class="text-gray-900 dark:text-white font-bold p-3 border-b border-gray-200 dark:border-dim-200"
+          >
+            who to follow
+          </h3>
+
+          <!-- user1 -->
+          <div class="hashtag flex justify-between items-center">
+            <div class="flex items-center cursor-pointer">
+              <img
+                src="./imgi_1_45.webp"
+                alt="user"
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="ml-2 dark:text-gray-200 text-dim-200">
+                <strong>Abkrym</strong>
+                <small class="block">@mohamedabdou</small>
+              </div>
+            </div>
+
+            <button
+              class="border-2 border-blue-400 py-1 px-4 text-blue-400 rounded-full font-bold"
+            >
+              follow
+            </button>
+          </div>
+
+          <!-- user2 -->
+          <div class="hashtag flex justify-between items-center">
+            <div class="flex items-center cursor-pointer">
+              <img
+                src="./imgi_1_45.webp"
+                alt="user"
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="ml-2 dark:text-gray-200 text-dim-200">
+                <strong>Abkrym</strong>
+                <small class="block">@mohamedabdou</small>
+              </div>
+            </div>
+
+            <button
+              class="border-2 border-blue-400 py-1 px-4 text-blue-400 rounded-full font-bold"
+            >
+              follow
+            </button>
+          </div>
+
+          <!-- load -->
+          <div class="p-5 border-b border-gray-200 dark:border-dim-200">
+            <div class="flex gap-x-4 animate-pulse">
+              <div class="rounded-full bg-gray-400 h-12 w-12"></div>
+              <div class="flex-1 space-y-2 py-1">
+                <div class="h-4 bg-gray-400 rounded w-5/6"></div>
+                <div class="h-4 bg-gray-400 rounded w-3/4"></div>
+                <div class="h-4 bg-gray-400 rounded w-4/6"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-blue-400 p-3 cursor-pointer">Show more</div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
