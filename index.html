@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <title>Twitter Clone</title>
+  </head>
+  <body class="bg-white dark:bg-dim-900">
+    <div class="container h-screen mx-auto flex xl:max-w-[1200px]">
+      <!-- left -->
+      <div class="flex flex-col w-20 xl:w-1/5 xl:pr-4 h-full">
+        <!-- logo -->
+        <a href="#" class="link-active mt-3">
+          <i class="fa-brands fa-twitter text-4xl"></i>
+        </a>
+        <!-- links -->
+        <nav class="mt-5">
+          <a href="#" class="link-active mb-4">
+            <i class="fa-solid fa-house text-xl"></i>
+            <span class="link-span">Home</span>
+          </a>
+          <a href="#" class="link mb-4">
+            <i class="fa-solid fa-hashtag text-xl"></i>
+            <span class="link-span">Explore</span>
+          </a>
+          <a href="#" class="link mb-4">
+            <i class="fa-solid fa-bell text-xl"></i>
+            <span class="link-span">Notification</span>
+          </a>
+          <a href="#" class="link mb-4">
+            <i class="fa-solid fa-envelope text-xl"></i>
+            <span class="link-span">Messages</span>
+          </a>
+          <a href="#" class="link mb-4">
+            <i class="fa-solid fa-bookmark text-xl"></i>
+            <span class="link-span">Book Marks</span>
+          </a>
+          <a href="#" class="link mb-4">
+            <i class="fa-solid fa-list-ul text-xl"></i>
+            <span class="link-span">Lists</span>
+          </a>
+          <a href="#" class="link mb-4">
+            <i class="fa-solid fa-user text-xl"></i>
+            <span class="link-span">Profile</span>
+          </a>
+          <a href="#" class="link mb-4">
+            <i class="fa-solid fa-ellipsis text-xl"></i>
+            <span class="link-span">More</span>
+          </a>
+        </nav>
+        <!-- buuton -->
+        <a
+          href="#"
+          class="flex justify-center items-center text-white bg-blue-400 w-11 h-11 font-bold mx-auto rounded-full xl:w-full"
+        >
+          <i class="fa-solid fa-feather text-xl block xl:hidden"></i>
+          <span class="link-span ml-0">Twitt</span>
+        </a>
+        <!-- user -->
+        <div
+          class="flex justify-between mb-2 items-center mt-auto w-14 xl:w-full p-2 cursor-pointer"
+        >
+          <img class="w-10 h-10 rounded-full" src="./imgi_1_45.webp" alt="" />
+          <div class="hidden xl:flex flex-col text-gray-800 dark:text-white">
+            <h4 class="font-bold">Abkrym</h4>
+            <p class="text-gray-400 text-sm">@mohamedabdou</p>
+          </div>
+          <i
+            class="fa-solid fa-chevron-down text-xs hidden xl:flex items-center xl:ml-4 text-gray-800 dark:text-white"
+          >
+          </i>
+        </div>
+      </div>
+
+      <!-- middle -->
+      <div class="h-screen overflow-y-auto xl:w-1/2 w-full">
+        <!-- sticky home  -->
+        <div
+          class="flex justify-between items-center border border-gray-200 dark:border-gray-700 bg-white dark:bg-dim-900 px-4 py-3 sticky top-0"
+        >
+          <strong class="text-gray-800 dark:text-gray-200 font-bold"
+            >Home</strong
+          >
+
+          <i class="fa-brands fa-twitter text-lg text-blue-400"></i>
+        </div>
+
+        <!-- twit-box -->
+        <div class="border pb-3 border-gray-200 dark:border-dim-200">
+          <div class="flex p-4">
+            <img
+              src="./imgi_1_45.webp"
+              alt="person"
+              class="w-10 h-10 rounded-full"
+            />
+            <textarea
+              class="resize-none dark:text-white bg-transparent text-gray-900 w-full h-16 focus:outline-none p-2"
+              placeholder="What is in your mind"
+            ></textarea>
+          </div>
+
+          <!-- tooles box -->
+          <div class="w-full flex justify-between items-center p-4">
+            <!-- tooles -->
+            <div class="flex flex-wrap">
+              <a href="#" class="rounded-full p-1 text-blue-400">
+                <i class="fa-solid fa-image text-lg"></i>
+              </a>
+              <a href="#" class="rounded-full p-1 text-blue-400">
+                <i class="fa-brands fa-git text-lg"></i>
+              </a>
+              <a href="#" class="rounded-full p-1 text-blue-400">
+                <i class="fa-solid fa-square-poll-horizontal text-lg"></i>
+              </a>
+              <a href="#" class="rounded-full p-1 text-blue-400">
+                <i class="fa-solid fa-face-smile text-lg"></i>
+              </a>
+              <a href="#" class="rounded-full p-1 text-blue-400">
+                <i class="fa-solid fa-business-time text-lg"></i>
+              </a>
+            </div>
+
+            <!-- buuton -->
+            <a
+              href="#"
+              class="flex justify-center font-bold items-center text-white bg-blue-400 w-28 py-2 px-3 font-bold rounded-full"
+            >
+              Twitt
+            </a>
+          </div>
+        </div>
+
+        <!-- show tiwttes -->
+        <div
+          class="w-full py-4 cursor-pointer text-center text-blue-400 font-bold bg-white dark:bg-dim-900 border border-gray-200 dark:border-dim-200"
+        >
+          Show 9 twittes
+        </div>
+
+        <!-- tiwtta -->
+        <div
+          class="border border-gray-200 dark:border-dim-200 cursor-pointer pb-4"
+        >
+          <!-- user -->
+          <div class="flex p-4 pb-0 items-center dark:text-white text-gray-900">
+            <img
+              src="./imgi_1_45.webp"
+              alt="user"
+              class="w-9 h-9 rounded-full"
+            />
+            <!-- username -->
+            <div class="">
+              <strong>Abkrym</strong>
+              <small>@mohamedabdou ,2 Nov</small>
+            </div>
+          </div>
+
+          <!-- content -->
+          <div class="pl-8 xl:pl-16 pr-4">
+            <p class="w-auto font-medium text-gray-800 dark:text-white">
+              Any fool can write code that a computer can understand. Good
+              programmers write code that humans can understand.<br />
+              <br />
+              Experience is the name everyone gives to their
+              <a href="#" class="text-blue-400">#mistakes</a>
+              <br />
+              <br />
+              Simplicity is the soul of efficiency.
+            </p>
+            <img
+              src="./single-property.jpg"
+              alt="img"
+              class="w-full object-cover rounded-2xl my-3 mr-2 border border-gray-600"
+            />
+
+            <!-- icon -->
+            <div class="flex items-center justify-between w-full">
+              <div
+                class="flex items-center dark:text-white text-gray-900 hover:text-blue-400 dark:hover:text-blue-400 transition"
+              >
+                <i class="fa-solid fa-comment mr-2 text-lg"></i>
+                12.3k
+              </div>
+              <div
+                class="flex items-center dark:text-white text-gray-900 hover:text-green-400 dark:hover:text-green-400 transition"
+              >
+                <i class="fa-solid fa-retweet mr-2 text-lg"></i>
+                13k
+              </div>
+              <div
+                class="flex items-center dark:text-white text-gray-900 hover:text-red-600 dark:hover:text-red-600 transition"
+              >
+                <i class="fa-solid fa-heart mr-2 text-lg"></i>
+                3k
+              </div>
+              <div
+                class="flex items-center dark:text-white text-gray-900 hover:text-blue-400 dark:hover:text-blue-400 transition"
+              >
+                <i class="fa-solid fa-share mr-2 text-lg"></i>
+                7k
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Toggler -->
+        <div
+          class="py-2 border border-gray-200 dark:border-dim-200 bg-gray-50 dark:bg-dim-300"
+        >
+          <div
+            class="text-center p-6 bg-white dark:bg-dim-900 border-b border-t border-gray-200 dark:border-dim-200"
+          >
+            <h3 class="dark:text-white text-gray-900 text-2xl font-bold mb-2">
+              Customize your view
+            </h3>
+            <p class="text-gray-500 mb-5 text-sm">
+              Manage your font size, color and background. These settings affect
+              all the Twitter accounts on this browser.
+            </p>
+            <a
+              href="javascript:void(0)"
+              onclick="document.querySelector('html').classList.toggle('dark')"
+              class="mx-auto w-11 h-11 xl:w-48 flex items-center justify-center bg-blue-400 py-3 rounded-full text-white font-bold"
+            >
+              <i class="fa-solid fa-cloud-moon block xl:hidden text-lg"></i>
+              <span class="hidden xl:block font-bold">Toggle Dark Mode</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Spinner -->
+        <div class="p-4 border border-gray-200 dark:border-gray-700">
+          <svg class="w-8 h-8 mx-auto animate-spin">
+            <circle
+              cx="16"
+              cy="16"
+              fill="none"
+              r="14"
+              stroke-width="4"
+              style="stroke: rgb(29, 161, 242); opacity: 0.2"
+            ></circle>
+            <circle
+              cx="16"
+              cy="16"
+              fill="none"
+              r="14"
+              stroke-width="4"
+              style="
+                stroke: rgb(29, 161, 242);
+                stroke-dasharray: 80;
+                stroke-dashoffset: 60;
+              "
+            ></circle>
+          </svg>
+        </div>
+      </div>
+
+      <!-- right -->
+      <div class="hidden xl:block w-[30%]"></div>
+    </div>
+  </body>
+</html>
